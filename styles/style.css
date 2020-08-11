@@ -1,0 +1,11 @@
+html, body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, p{
+	color: white;
+}
