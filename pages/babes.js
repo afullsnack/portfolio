@@ -4,9 +4,11 @@ import Col from 'antd/lib/col';
 import Card from 'antd/lib/card';
 import Input from 'antd/lib/input';
 import Button from 'antd/lib/button';
+import Divider from 'antd/lib/divider'
 import message from 'antd/lib/message';
+import Progress from 'antd/lib/progress';
 
-import { MailOutlined, UserAddOutlined, LoadingOutlined, LinkOutlined, InstagramOutlined, GithubOutlined, TwitterOutlined } from '@ant-design/icons';
+import { MailOutlined, UserAddOutlined, LoadingOutlined, LinkOutlined, InstagramOutlined, GithubOutlined, TwitterOutlined, LaptopOutlined, CloudOutlined, MobileTwoTone, MobileOutlined } from '@ant-design/icons';
 
 import { motion } from 'framer-motion';
 
@@ -27,12 +29,33 @@ export default class Babes extends Component {
 			message.success("You've been added successfully!", 2);
 		}, 3000);
 	}
+
+	handleRadioSkillSelect (e) {
+		const currentActiveElem = document.getElementsByClassName('active');
+		// console.log(currentActiveElem.length);
+		if(currentActiveElem.length == 0) {
+			e.currentTarget.className += " active";
+		} else {
+			for(var i=0; i<currentActiveElem.length; i++) {
+				currentActiveElem[i].setAttribute("class", "ant-card-grid ant-card-grid-hoverable");
+			}
+			e.currentTarget.className += " active";
+		}
+	}
     
 	render(){
 		
 		return(
 			<>
-				<Row gutter={[0, 8]} style={{width: '100%', height: '60vh', marginBottom: 0, backgroundColor: '#001509'}}>
+				<Row gutter={[0, 8]} style={{
+					width: '100%',
+					height: '60vh',
+					marginBottom: 0,
+					backgroundImage: "url('/hero-img.jpg')",
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+				}}>
 					<Col span={24} style={{
 						display: 'flex',
 						flexFlow: 'column',
@@ -68,7 +91,7 @@ export default class Babes extends Component {
 						}} />
 					</Col>
 				</Row>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: '0 0 30px 0', backgroundColor: '#001529', padding: 50}}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
 					<Col span={24} style={{
 						display: 'flex',
 						alignItems: 'center',
@@ -77,7 +100,8 @@ export default class Babes extends Component {
 						<h1 style={{
 							margin: 0,
 							padding: 0,
-							fontSize: '2rem',
+							fontSize: "1.8rem",
+							textAlign: "center",
 							fontWeight: 'bolder',
 							background: `
 								linear-gradient(
@@ -96,7 +120,7 @@ export default class Babes extends Component {
 						justifyContent: 'center',
 						height: "auto",
 					}}>
-						<Card bordered={false} cover={<img src="/img2.jpg" width="100%" height="100%" />} style={{
+						<Card bordered={false} cover={<LaptopOutlined style={{color: 'white', fontSize: 36, padding: '48px 0'}} />} bodyStyle={{paddingTop: 0}} style={{
 							width: '100%',
 							height: '100%',
 							backgroundColor: 'transparent',
@@ -105,7 +129,7 @@ export default class Babes extends Component {
 								'-10px -10px 10px 0 rgba(255,255,255,.12)',
 							]
 						}}>
-							<Card.Meta title="ReactJS Development" description="I am well versed in react.js development with over 3 years of experience learning and deplying web apps. My favourite tool to work wth react.js is next.js for server rendering, which significantly reduces web app loading time and displays content to the user very fast." />
+							<Card.Meta title="Web Development" description="I am well versed in react.js development with over 3 years of experience learning and deplying web apps. My favourite tool to work wth react.js is next.js for server rendering, which significantly reduces web app loading time and displays content to the user very fast." />
 						</Card>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} lg={{span: 8}} xl={{span: 8}} style={{
@@ -114,7 +138,7 @@ export default class Babes extends Component {
 						justifyContent: 'center',
 						height: "auto",
 					}}>
-						<Card bordered={false} cover={<img src="/img2.jpg" width="inherit" height="100%" />} style={{
+						<Card bordered={false} cover={<CloudOutlined style={{color: 'white', fontSize: 36, padding: '48px 0'}} />} bodyStyle={{paddingTop: 0}} style={{
 							width: '100%',
 							height: '100%',
 							backgroundColor: 'transparent',
@@ -132,7 +156,7 @@ export default class Babes extends Component {
 						justifyContent: 'center',
 						height: "auto",
 					}}>
-						<Card bordered={false} cover={<img src="/img2.jpg" width="inherit" height="100%" />} style={{
+						<Card bordered={false} cover={<MobileOutlined style={{color: 'white', fontSize: 36, padding: '48px 0'}} />} bodyStyle={{paddingTop: 0}} style={{
 							width: '100%',
 							height: '100%',
 							backgroundColor: 'transparent',
@@ -145,11 +169,117 @@ export default class Babes extends Component {
 						</Card>
 					</Col>
 				</Row>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: '0 0 30px 0', backgroundColor: '#001529', padding: 50}}>
+					<Col span={24} style={{textAlign: 'center'}}>
+						<h1 style={{
+							margin: 0,
+							padding: 0,
+							fontSize: '1.8rem',
+							textAlign: "center",
+							fontWeight: 'bolder',
+							background: `
+								linear-gradient(
+									to right,
+									#9b461f,
+									#dea450
+								)
+							`,
+							WebkitBackgroundClip: 'text',
+							WebkitTextFillColor: 'transparent',
+						}}><LinkOutlined style={{ color: 'white' }} /> Tools & Languages</h1>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}} actions={["24", "12", "32"]}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span><br/>
+							<Progress percent={80} strokeColor={{ from: "#108ee9", to: "#87d068"}} />
+						</Card>
+					</Col>
+				</Row>
+
 				<style global jsx>{`
 					.ant-card-meta-title {
 						// color: white;
+						text-align: center;
 						font-weight: bolder;
-						font-size: 1.2rem;
+						font-size: 1.3rem;
 						letter-spacing: 1.2px;
 						background: linear-gradient(to right, #9b461f, #dea450);
 						-webkit-background-clip: text;
@@ -158,6 +288,10 @@ export default class Babes extends Component {
 					.ant-card-meta-description {
 						color: white;
 						letter-spacing: 1px;
+						text-align: center;
+					}
+					.ant-card-actions {
+						background: tansparent;
 					}
 				`}</style>
 			</>
