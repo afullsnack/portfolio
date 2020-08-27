@@ -188,7 +188,112 @@ export default class Babes extends Component {
 							WebkitTextFillColor: 'transparent',
 						}}><LinkOutlined style={{ color: 'white' }} /> Portfolio</h1>
 					</Col>
-					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 8}} style={{margin: 0}}>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
+						<Card style={{
+							color: "white",
+							backgroundColor: 'transparent',
+							boxShadow: [
+								'10px 10px 10px 0 rgba(0,0,0,.35)',
+								'-10px -10px 10px 0 rgba(255,255,255,.12)',
+							],
+							border: 0,
+						}}
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						</Card>
+					</Col>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
 						<Card style={{
 							color: "white",
 							backgroundColor: 'transparent',
@@ -204,7 +309,7 @@ export default class Babes extends Component {
 						</Card>
 					</Col>
 				</Row>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#264D59', padding: 50}}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: 'white', padding: 50}}>
 					<Col span={24} style={{textAlign: 'center'}}>
 						<h1 style={{
 							margin: 0,
@@ -221,9 +326,9 @@ export default class Babes extends Component {
 							`,
 							WebkitBackgroundClip: 'text',
 							WebkitTextFillColor: 'transparent',
-						}}><LinkOutlined style={{ color: 'white' }} /> Contact</h1>
+						}}><LinkOutlined style={{ color: '#1890ff' }} /> Contact</h1>
 						<h2>Want to Hire me? or Talk about cool stuff?</h2>
-						<span>Reach me through!</span><br/>
+						<h3>Reach me through!</h3><br/>
 					</Col>
 				</Row>
 
