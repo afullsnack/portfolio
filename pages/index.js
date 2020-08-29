@@ -8,7 +8,7 @@ import Divider from 'antd/lib/divider'
 import message from 'antd/lib/message';
 import Progress from 'antd/lib/progress';
 
-import { MailFilled, UserAddOutlined, LoadingOutlined, LinkOutlined, InstagramOutlined, GithubOutlined, TwitterOutlined, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled } from '@ant-design/icons';
+import { MailFilled, LoadingOutlined, LinkOutlined, LinkedinFilled, InstagramOutlined, GithubOutlined, TwitterOutlined, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled, InstagramFilled, TwitterCircleFilled, ArrowRightOutlined, ArrowLeftOutlined, MailOutlined, ArrowDownOutlined, } from '@ant-design/icons';
 
 import { motion } from 'framer-motion';
 
@@ -81,6 +81,7 @@ export default class Babes extends Component {
 								<TwitterOutlined style={{ color: 'white', fontSize: 20 }} />
 							</motion.div>
 						</div>
+						<h3 style={{color: "white", fontWeight: 'bold', fontFamily: "monospace"}}><ArrowDownOutlined style={{ color: '#1890ff' }} /> Join my mailing list! <ArrowDownOutlined style={{ color: '#1890ff' }} /></h3>
 						<Input value={this.state.email} onChange={e => this.setState({email: e.target.value})} prefix={<MailFilled style={{color: '#001529'}} />} suffix={this.state.loadingListing? <LoadingOutlined /> : <Button type="link" size="small" style={{fontWeight: 'bolder'}} onClick={e => this.handleListing()}>Join List</Button>} type="email" size="large"  placeholder="Code tips? Enter email, NO BS!" style={{
 							position: "absolute",
 							bottom: -20,
@@ -110,9 +111,10 @@ export default class Babes extends Component {
 									#dea450
 								)
 							`,
+							fontFamily: "monospace",
 							WebkitBackgroundClip: 'text',
 							WebkitTextFillColor: 'transparent',
-						}}><LinkOutlined style={{ color: 'white' }} /> Skills & Experiences</h1>
+						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Skills & Experiences <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} lg={{span: 8}} xl={{span: 8}} style={{
 						display: 'flex',
@@ -184,69 +186,10 @@ export default class Babes extends Component {
 									#dea450
 								)
 							`,
+							fontFamily: "monospace",
 							WebkitBackgroundClip: 'text',
 							WebkitTextFillColor: 'transparent',
-						}}><LinkOutlined style={{ color: 'white' }} /> Portfolio</h1>
-					</Col>
-					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
-						<Card style={{
-							color: "white",
-							backgroundColor: 'transparent',
-							boxShadow: [
-								'10px 10px 10px 0 rgba(0,0,0,.35)',
-								'-10px -10px 10px 0 rgba(255,255,255,.12)',
-							],
-							border: 0,
-						}}
-						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
-							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
-						</Card>
-					</Col>
-					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
-						<Card style={{
-							color: "white",
-							backgroundColor: 'transparent',
-							boxShadow: [
-								'10px 10px 10px 0 rgba(0,0,0,.35)',
-								'-10px -10px 10px 0 rgba(255,255,255,.12)',
-							],
-							border: 0,
-						}}
-						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
-							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
-						</Card>
-					</Col>
-					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
-						<Card style={{
-							color: "white",
-							backgroundColor: 'transparent',
-							boxShadow: [
-								'10px 10px 10px 0 rgba(0,0,0,.35)',
-								'-10px -10px 10px 0 rgba(255,255,255,.12)',
-							],
-							border: 0,
-						}}
-						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
-							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
-						</Card>
-					</Col>
-					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
-						<Card style={{
-							color: "white",
-							backgroundColor: 'transparent',
-							boxShadow: [
-								'10px 10px 10px 0 rgba(0,0,0,.35)',
-								'-10px -10px 10px 0 rgba(255,255,255,.12)',
-							],
-							border: 0,
-						}}
-						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
-							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
-						</Card>
+						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Portfolio <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
 						<Card style={{
@@ -309,13 +252,13 @@ export default class Babes extends Component {
 						</Card>
 					</Col>
 				</Row>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: 'white', padding: 50}}>
-					<Col span={24} style={{textAlign: 'center'}}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: 'white'}}>
+					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{display: 'flex', flexFlow: "column", alignItems: "center", justifyContent: "center", margin: 0, padding: 50}}>
 						<h1 style={{
 							margin: 0,
 							padding: 0,
 							fontSize: '1.8rem',
-							textAlign: "center",
+							textAlign: "left",
 							fontWeight: 'bolder',
 							background: `
 								linear-gradient(
@@ -324,11 +267,37 @@ export default class Babes extends Component {
 									#dea450
 								)
 							`,
+							fontFamily: "monospace",
 							WebkitBackgroundClip: 'text',
 							WebkitTextFillColor: 'transparent',
-						}}><LinkOutlined style={{ color: '#1890ff' }} /> Contact</h1>
-						<h2>Want to Hire me? or Talk about cool stuff?</h2>
-						<h3>Reach me through!</h3><br/>
+						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Contact Me <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
+						<h2>Want to Hire me?</h2>
+						<Button type="link" style={{backgroundColor: "#9b461f", color: "white"}} size="large" href="mailto:miraclef60@gmail.com"><MailOutlined /> SHOOT AN EMAIL</Button>
+					</Col>
+					<Col className="cool-bg" xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{textAlign: 'center', margin: 0, padding: 50}}>
+						<h2 className="socials">Socials</h2>
+						<Card style={{background: "transparent", padding: 20}} bordered={false}>
+							<Card.Grid style={{width: "50%", backgroundColor: "transparent", display: "flex", alignItems: "center", justifyContent: "end"}}>
+								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+									<GithubFilled style={{fontSize: 49}} />
+								</div>
+							</Card.Grid>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
+								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+									<InstagramFilled style={{fontSize: 49}} />
+								</div>
+							</Card.Grid>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent", display: "flex", alignItems: "center", justifyContent: "end"}}>
+								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+									<LinkedinFilled style={{fontSize: 49}} />
+								</div>
+							</Card.Grid>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
+								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+									<TwitterCircleFilled style={{fontSize: 49}} />
+								</div>
+							</Card.Grid>
+						</Card>
 					</Col>
 				</Row>
 
@@ -339,6 +308,7 @@ export default class Babes extends Component {
 						font-weight: bolder;
 						font-size: 1.3rem;
 						letter-spacing: 1.2px;
+						font-family: monospace, sans-serif;
 						background: linear-gradient(to right, #9b461f, #dea450);
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
@@ -348,8 +318,20 @@ export default class Babes extends Component {
 						letter-spacing: 1px;
 						text-align: center;
 					}
-					.ant-progress-text {
-						color: white;
+					.ant-card-grid {
+						box-shadow: none;
+					}
+					.ant-card-grid:hover {
+						box-shadow: none;
+					}
+					.ant-card-grid div {
+						transition: all .3s ease;
+					}
+					.ant-card-grid div:hover {
+						cursor: pointer;
+						box-shadow:
+							4px 4px 2px 2px rgba(255,255,255,.24),
+							-4px -4px 2px 2px rgba(0,0,0,.5);
 					}
 
 					.ant-card-actions {
@@ -363,6 +345,14 @@ export default class Babes extends Component {
 
 					.ant-card-actions li:hover span svg {
 						color: #1890ff;
+					}
+
+					h2.socials {
+						color: white;
+						font-family: monospace, sans-serif;
+					}
+					.cool-bg {
+						background: repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
 					}
 				`}</style>
 			</>
