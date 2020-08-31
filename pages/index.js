@@ -2,96 +2,24 @@ import { Component } from 'react';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Card from 'antd/lib/card';
-import Input from 'antd/lib/input';
 import Button from 'antd/lib/button';
-import Divider from 'antd/lib/divider'
-import message from 'antd/lib/message';
-import Progress from 'antd/lib/progress';
 
-import { MailFilled, LoadingOutlined, LinkOutlined, LinkedinFilled, InstagramOutlined, GithubOutlined, TwitterOutlined, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled, InstagramFilled, TwitterCircleFilled, ArrowRightOutlined, ArrowLeftOutlined, MailOutlined, ArrowDownOutlined, } from '@ant-design/icons';
+import { LinkOutlined, LinkedinFilled, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled, InstagramFilled, TwitterCircleFilled, ArrowRightOutlined, ArrowLeftOutlined, MailOutlined, } from '@ant-design/icons';
 
 import { motion } from 'framer-motion';
 
 import Link from 'next/link';
 import Router from 'next/router';
+import Footer from '../components/footer';
+import Header from '../components/header';
 
 export default class Babes extends Component {
-
-	state = {
-		email: null,
-		loadingListing: false,
-	};
-
-	handleListing () {
-		this.setState({ loadingListing: true });
-		setTimeout(() => {
-			this.setState({ loadingListing: false, email: null })
-			message.success("You've been added successfully!", 2);
-		}, 3000);
-	}
-
-	handleRadioSkillSelect (e) {
-		const currentActiveElem = document.getElementsByClassName('active');
-		// console.log(currentActiveElem.length);
-		if(currentActiveElem.length == 0) {
-			e.currentTarget.className += " active";
-		} else {
-			for(var i=0; i<currentActiveElem.length; i++) {
-				currentActiveElem[i].setAttribute("class", "ant-card-grid ant-card-grid-hoverable");
-			}
-			e.currentTarget.className += " active";
-		}
-	}
     
 	render(){
 		
 		return(
 			<>
-				<Row gutter={[0, 8]} style={{
-					width: '100%',
-					height: '60vh',
-					marginBottom: 0,
-					backgroundImage: "url('/hero-img.jpg')",
-					backgroundPosition: "center",
-					backgroundSize: "cover",
-					backgroundRepeat: "no-repeat",
-				}}>
-					<Col span={24} style={{
-						display: 'flex',
-						flexFlow: 'column',
-						alignItems: 'center',
-						justifyContent: 'flex-end',
-						padding: 20,
-					}}>
-						<div style={{
-							display: "flex",
-							flexFlow: "row",
-							alignItems: "center",
-							justifyContent: "flex-end",
-							padding: 25,
-							height: 100,
-						}}>
-							<motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 3.2,}}>
-								<InstagramOutlined style={{ color: 'white', fontSize: 20 }} />
-							</motion.div>
-							<motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 1.2, delay: 2.2}} style={{ margin: "0 20px" }}>
-								<GithubOutlined style={{ color: 'white', fontSize: 20 }} />
-							</motion.div>
-							<motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 3.2, delay: 3.2}}>
-								<TwitterOutlined style={{ color: 'white', fontSize: 20 }} />
-							</motion.div>
-						</div>
-						<h3 style={{color: "white", fontWeight: 'bold', fontFamily: "monospace"}}><ArrowDownOutlined style={{ color: '#1890ff' }} /> Join my mailing list! <ArrowDownOutlined style={{ color: '#1890ff' }} /></h3>
-						<Input value={this.state.email} onChange={e => this.setState({email: e.target.value})} prefix={<MailFilled style={{color: '#001529'}} />} suffix={this.state.loadingListing? <LoadingOutlined /> : <Button type="link" size="small" style={{fontWeight: 'bolder'}} onClick={e => this.handleListing()}>Join List</Button>} type="email" size="large"  placeholder="Code tips? Enter email, NO BS!" style={{
-							position: "absolute",
-							bottom: -20,
-							right: 'auto',
-							left: 'auto',
-							width: '70%',
-							border: 0,
-						}} />
-					</Col>
-				</Row>
+				<Header />
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
 					<Col span={24} style={{
 						display: 'flex',
@@ -300,6 +228,7 @@ export default class Babes extends Component {
 						</Card>
 					</Col>
 				</Row>
+				<Footer />
 
 				<style global jsx>{`
 					.ant-card-meta-title {
@@ -353,6 +282,26 @@ export default class Babes extends Component {
 					}
 					.cool-bg {
 						background: repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
+					}
+					ul.extra_repos {
+						list-style: none;
+						list-style=type: none;
+					}
+					ul.extra_repos li {
+						list-style: none;
+						list-style-type: disc;
+						list-style-type-color: blue;
+						list-style-color: blue;
+					}
+					ul.playlist {
+						list-style: none;
+						list-style=type: none;
+					}
+					ul.playlist li {
+						list-style: none;
+						list-style-type: disc;
+						list-style-type-color: blue;
+						list-style-color: blue;
 					}
 				`}</style>
 			</>
