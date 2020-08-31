@@ -24,7 +24,7 @@ class Footer extends Component {
    render() {
 
       return (
-         <Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
+         <Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#F5F5F5', padding: 50}}>
             <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} lg={{span: 8}} xl={{span: 8}} style={{padding: 30}}>
                <h1 style={{
                   margin: 0,
@@ -43,14 +43,14 @@ class Footer extends Component {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                }}>Join my mailing list!</h1>
-               <h2 style={{color: "white", fontFamily: "monospace", lineHeight: 1, fontSize: "1rem"}}>For code tips, inspiration, tutorials and more</h2>
+               <h2 style={{color: "#001529", fontFamily: "monospace", lineHeight: 1, fontSize: "1rem"}}>For code tips, inspiration, tutorials and more</h2>
                <Input value={this.state.email} onChange={e => this.setState({email: e.target.value})} prefix={<MailFilled style={{color: '#001529'}} />} suffix={this.state.loadingListing? <LoadingOutlined /> : <Button type="link" size="small" style={{fontWeight: 'bolder'}} onClick={e => this.handleListing()}>Join List</Button>} type="email" size="large"  placeholder="Enter email, NO BS!" />
             </Col>
             <Col xs={{span: 24}} sm={{span: 24}} md={{span: 8}} lg={{span: 8}} xl={{span: 8}} style={{padding: 30}}>
             <h1 style={{
                   margin: 0,
                   padding: 0,
-                  fontSize: '1.2rem',
+                  fontSize: '1.5rem',
                   textAlign: "left",
                   fontWeight: 'bolder',
                   background: `
@@ -76,7 +76,7 @@ class Footer extends Component {
             <h1 style={{
                   margin: 0,
                   padding: 0,
-                  fontSize: '1.2rem',
+                  fontSize: '1.5rem',
                   textAlign: "left",
                   fontWeight: 'bolder',
                   background: `
@@ -101,6 +101,28 @@ class Footer extends Component {
             <Col span={24} style={{padding: 20, textAlign: "center"}}>
                <span style={{color: "white"}}>Copoy right designed by Miracle Friday c 2020</span>
             </Col>
+            <style jsx>{`
+               ul.extra_repos {
+						list-style: none;
+						list-style=type: none;
+					}
+					ul.extra_repos li {
+						list-style: none;
+						list-style-type: disc;
+						list-style-type-color: blue;
+						list-style-color: blue;
+					}
+					ul.playlist {
+						list-style: none;
+						list-style=type: none;
+					}
+					ul.playlist li {
+						list-style: none;
+						list-style-type: disc;
+						list-style-type-color: blue;
+						list-style-color: blue;
+					}
+            `}</style>
          </Row>
       );
    }

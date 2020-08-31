@@ -12,16 +12,14 @@ import { motion } from 'framer-motion';
 
 import Link from 'next/link';
 import Router from 'next/router';
-import Footer from '../components/footer';
-import Header from '../components/header';
+import withLayout from '../components/LayoutHOC';
 
-export default class Babes extends Component {
+class Blog extends Component {
     
 	render(){
 		
 		return(
 			<>
-				<Header />
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
             <h1 style={{
                margin: 0,
@@ -41,7 +39,6 @@ export default class Babes extends Component {
                WebkitTextFillColor: 'transparent',
             }}>No Blogs yet but watch this space</h1>
 				</Row>
-				<Footer />
 
 				<style global jsx>{`
 					.ant-card-meta-title {
@@ -96,28 +93,11 @@ export default class Babes extends Component {
 					.cool-bg {
 						background: repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
 					}
-					ul.extra_repos {
-						list-style: none;
-						list-style=type: none;
-					}
-					ul.extra_repos li {
-						list-style: none;
-						list-style-type: disc;
-						list-style-type-color: blue;
-						list-style-color: blue;
-					}
-					ul.playlist {
-						list-style: none;
-						list-style=type: none;
-					}
-					ul.playlist li {
-						list-style: none;
-						list-style-type: disc;
-						list-style-type-color: blue;
-						list-style-color: blue;
-					}
+					
 				`}</style>
 			</>
 		)
 	}
 }
+
+export default withLayout(Blog);

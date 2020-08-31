@@ -10,16 +10,14 @@ import { motion } from 'framer-motion';
 
 import Link from 'next/link';
 import Router from 'next/router';
-import Footer from '../components/footer';
-import Header from '../components/header';
+import withLayout from '../components/LayoutHOC';
 
-export default class Babes extends Component {
+class Index extends Component {
     
 	render(){
-		
+		const { addedStyle } = this.props;
 		return(
 			<>
-				<Header />
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
 					<Col span={24} style={{
 						display: 'flex',
@@ -228,7 +226,6 @@ export default class Babes extends Component {
 						</Card>
 					</Col>
 				</Row>
-				<Footer />
 
 				<style global jsx>{`
 					.ant-card-meta-title {
@@ -283,28 +280,10 @@ export default class Babes extends Component {
 					.cool-bg {
 						background: repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
 					}
-					ul.extra_repos {
-						list-style: none;
-						list-style=type: none;
-					}
-					ul.extra_repos li {
-						list-style: none;
-						list-style-type: disc;
-						list-style-type-color: blue;
-						list-style-color: blue;
-					}
-					ul.playlist {
-						list-style: none;
-						list-style=type: none;
-					}
-					ul.playlist li {
-						list-style: none;
-						list-style-type: disc;
-						list-style-type-color: blue;
-						list-style-color: blue;
-					}
 				`}</style>
 			</>
 		)
 	}
 }
+
+export default withLayout(Index);

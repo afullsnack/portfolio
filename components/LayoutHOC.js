@@ -1,25 +1,26 @@
 import { Component } from 'react';
 import Layout from 'antd/lib/layout';
+import Header from './header';
+import Footer from './footer';
 
-const { Content, Sider, Header } = Layout;
+import Router from 'next/router';
 
 
-function BaseLayout(MyPage) {
+function withLayout(MyPage) {
    // return the page wrapped in the base layout of the design
    return class extends Component{
+
       render(){
+         
          return(
             <Layout style={{ minHeight: '100vh' }}>
-               <Header />
-               <Layout>
-                  <Content style={{ padding: 20 }}>
-                     <MyPage />
-                  </Content>
-               </Layout>
+               <Header path={this.props.pathname} />
+               <MyPage />
+               <Footer />
             </Layout>
          )
       }
    }
 }
 
-export default BaseLayout
+export default withLayout;

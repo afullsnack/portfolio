@@ -4,7 +4,6 @@ import Col from 'antd/lib/col';
 import Radio from 'antd/lib/radio';
 import Button from 'antd/lib/button';
 import { motion } from 'framer-motion';
-import { watchViewport, unwatchViewport, getViewportState } from 'tornis';
 
 import { InstagramOutlined, GithubOutlined, TwitterOutlined, } from '@ant-design/icons';
 import Link from 'next/link';
@@ -13,49 +12,19 @@ import Link from 'next/link';
 
 class Header extends Component {
 
-   state = {
-      scrollTop: 0,
-   }
-
-  
-   updateValues = ({ size, scroll, mouse }) => {
-  
-      if(scroll.changed) {
-        this.setState({ scrollTop: scroll.top });
-      }
-
-    }
-
-    async componentDidMount() {
-      watchViewport(this.updateValues);
-      console.log("tornis watching vp started");
-    }
-
-    componentWillUnmount() {
-      unwatchViewport(this.updateValues);
-      console.log("Tornis unwatches vp changes");
-    }
-
 
    render() {
-      const isFixed = this.state.scrollTop >= 170;
-      console.log(isFixed, this.state.scrollTop);
+      
+      const { path } = this.props;
+      console.log(path);
+      
       return (
-         <Row gutter={[0, 8]} style={ isFixed ? {
+         <Row gutter={[0, 8]} style={{
             width: '100%',
-            height: 230,
-            position: "absolute",
-            top: 0,
-            right: 0,
-            left: 0,
-            zIndex:100,
+            height: '60vh',
             marginBottom: 0,
             backgroundColor: "#212121",
-         } : {
-            width: '100%',
-            height: `calc(60vh - ${this.state.scrollTop}px)`,
-            marginBottom: 0,
-            backgroundColor: "#212121",
+            // transition: "all .3s ease",
             // backgroundImage: "url('/hero-img.jpg')",
             // backgroundPosition: "center",
             // backgroundSize: "cover",
@@ -88,13 +57,13 @@ class Header extends Component {
                </div>
                <div style={{
                   position: "absolute",
-                  bottom: -20,
+                  bottom: -15,
                   right: 'auto',
                   left: 'auto',
                   width: '70%',
                   textAlign: "center"
                }}>
-                  <Radio.Group optionType="button" buttonStyle="solid" defaultValue="home">
+                  <Radio.Group optionType="button" buttonStyle="solid" value={path == "/blog"? "blog" : "home"} defaultValue="home">
                      <Link href="/" passHref><Radio.Button value="home">HOME</Radio.Button></Link>
                      <Link href="/blog" passHref><Radio.Button value="blog">BLOG</Radio.Button></Link>
                   </Radio.Group>
