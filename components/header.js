@@ -25,10 +25,10 @@ class Header extends Component {
             marginBottom: 0,
             backgroundColor: "#212121",
             // transition: "all .3s ease",
-            // backgroundImage: "url('/hero-img.jpg')",
-            // backgroundPosition: "center",
-            // backgroundSize: "cover",
-            // backgroundRepeat: "no-repeat",
+            backgroundImage: "url('/hero-img-2.jpg')",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
          }}>
             <Col span={24} style={{
                display: 'flex',
