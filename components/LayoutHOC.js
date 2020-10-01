@@ -17,12 +17,12 @@ function withLayout(MyPage) {
          return(
             <Layout style={{ minHeight: '100vh' }}>
                <Header path={this.props.pathname} />
-               <Row gutter={0} style={{ margin: 0, padding: 0, width: "100%", height: "100%" }}>
-                  <Col xs={{span: 1}} sm={{span: 2}} md={{span: 3}} lg={{span: 4}} xl={{span: 6}} ></Col>
-                  <Col xs={{span: 22}} sm={{span: 20}} md={{span: 18}} lg={{span: 16}} xl={{span: 12}} >
+               <Row gutter={0} style={{ margin: 0, padding: 0, width: "100%", height: "100%", backgroundColor: "#001529"  }}>
+                  <Col xs={{span: 1}} sm={{span: 2}} md={{span: 3}} lg={{span: 3}} xl={{span: 2}} ></Col>
+                  <Col xs={{span: 22}} sm={{span: 20}} md={{span: 18}} lg={{span: 18}} xl={{span: 20}} >
                     <MyPage />
                   </Col>
-                  <Col xs={{span: 1}} sm={{span: 2}} md={{span: 3}} lg={{span: 4}} xl={{span: 6}} ></Col>
+                  <Col xs={{span: 1}} sm={{span: 2}} md={{span: 3}} lg={{span: 3}} xl={{span: 2}} ></Col>
                </Row>
                <Footer />
             </Layout>
