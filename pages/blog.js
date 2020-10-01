@@ -20,7 +20,7 @@ class Blog extends Component {
 		
 		return(
 			<>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: "50px 0"}}>
             <h1 style={{
                margin: 0,
                padding: 0,
