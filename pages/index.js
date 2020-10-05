@@ -202,15 +202,15 @@ class Index extends Component {
 					</Col>
 					<Col className="cool-bg" xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{textAlign: 'center', margin: 0, padding: 50}}>
 						<h2 className="socials">Socials</h2>
-						<Card style={{background: "transparent", padding: 20}} bordered={false}>
+						<Card style={{background: "transparent", padding: 20, display: "flex", alignItems: "center", justifyContent: "center" }} bordered={false}>
 							<Card.Grid style={{width: "50%", backgroundColor: "transparent", display: "flex", alignItems: "center", justifyContent: "end"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<GithubFilled style={{fontSize: 49}} />
+									<Link passHref href="https://github.com/sourceKing"><GithubFilled style={{fontSize: 49}} /></Link>
 								</div>
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<InstagramFilled style={{fontSize: 49}} />
+									<Link passHref href="https://instagram.com/mimi.codes"><InstagramFilled style={{fontSize: 49}} /></Link>
 								</div>
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent", display: "flex", alignItems: "center", justifyContent: "end"}}>
@@ -220,7 +220,7 @@ class Index extends Component {
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<TwitterCircleFilled style={{fontSize: 49}} />
+									<Link passHref href="https://twitter.com/mimi_oncode"><TwitterCircleFilled style={{fontSize: 49}} /></Link>
 								</div>
 							</Card.Grid>
 						</Card>
