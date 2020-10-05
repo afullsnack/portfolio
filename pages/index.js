@@ -205,12 +205,16 @@ class Index extends Component {
 						<Card style={{background: "transparent", padding: 20, display: "flex", alignItems: "center", justifyContent: "center" }} bordered={false}>
 							<Card.Grid style={{width: "50%", backgroundColor: "transparent", display: "flex", alignItems: "center", justifyContent: "end"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<Link passHref href="https://github.com/sourceKing"><GithubFilled style={{fontSize: 49}} /></Link>
+									<Link passHref href="https://github.com/sourceKing"><a>
+                    <GithubFilled style={{fontSize: 49}} />
+                  </a></Link>
 								</div>
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<Link passHref href="https://instagram.com/mimi.codes"><InstagramFilled style={{fontSize: 49}} /></Link>
+									<Link passHref href="https://instagram.com/mimi.codes"><a>
+                    <InstagramFilled style={{fontSize: 49}} />
+                  </a></Link>
 								</div>
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent", display: "flex", alignItems: "center", justifyContent: "end"}}>
@@ -220,7 +224,9 @@ class Index extends Component {
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
 								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<Link passHref href="https://twitter.com/mimi_oncode"><TwitterCircleFilled style={{fontSize: 49}} /></Link>
+									<Link passHref href="https://twitter.com/mimi_oncode"><a>
+                    <TwitterCircleFilled style={{fontSize: 49}} />
+                  </a></Link>
 								</div>
 							</Card.Grid>
 						</Card>
