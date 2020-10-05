@@ -18,7 +18,7 @@ class Index extends Component {
 		const { addedStyle } = this.props;
 		return(
 			<>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: "50px 0" }}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50 }}>
 					<Col span={24} style={{
 						display: 'flex',
 						alignItems: 'center',
