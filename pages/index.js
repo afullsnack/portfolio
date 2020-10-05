@@ -278,7 +278,9 @@ class Index extends Component {
 						font-family: monospace, sans-serif;
 					}
 					.cool-bg {
-						background: repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
+						background:
+              #0049B7;
+              //repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
 					}
 				`}</style>
 			</>
