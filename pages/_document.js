@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
           {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
         </Head>
         <body>

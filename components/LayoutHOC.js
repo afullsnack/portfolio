@@ -4,6 +4,7 @@ import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Header from './header';
 import Footer from './footer';
+import Head from 'next/head';
 
 import Router from 'next/router';
 
@@ -16,9 +17,12 @@ function withLayout(MyPage) {
          
          return(
             <Layout style={{ minHeight: '100vh' }}>
-               <Header path={this.props.pathname} />
-                  <MyPage />
-               <Footer />
+              <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+              </Head>
+              <Header path={this.props.pathname} />
+                <MyPage />
+              <Footer />
             </Layout>
          )
       }
