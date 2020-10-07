@@ -44,13 +44,14 @@ class Header extends Component {
 							  margin: 0,
 							  padding: 0,
 							  fontSize: "3rem",
+                lineHeight: 1.4,
 							  textAlign: "right",
 							  fontWeight: 'bolder',
 							  background: `
 								  linear-gradient(
 									  to right,
-									  #9b461f,
-									  #dea450
+									  #09d3ac,
+									  #fde311
 								  )
 							  `,
 							  fontFamily: "monospace",
@@ -63,13 +64,7 @@ class Header extends Component {
 							  fontSize: "1.5rem",
 							  textAlign: "center",
 							  fontWeight: 'bolder',
-							  background: `
-								  linear-gradient(
-									  to right,
-									  #9b461f,
-									  #dea450
-								  )
-							  `,
+							  background: '#fde311', 
 							  fontFamily: "monospace",
 							  WebkitBackgroundClip: 'text',
 							  WebkitTextFillColor: 'transparent',
@@ -86,15 +81,27 @@ class Header extends Component {
                   padding: 25,
                   height: 100,
                }}>
+                  <Link passHref href="https://instagram.com/mimi.codes"><a>
                   <motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 3.2,}}>
-                     <InstagramOutlined style={{ color: 'white', fontSize: 20 }} />
+                     <InstagramOutlined style={{ color: '#ffffff', borderRadius: 3, fontSize: 20, background: '#d6249f', background: `radial-gradient(
+                      circle at 30% 107%,
+                      #fdf497 0%,
+                      #fdf497 5%,
+                      #fd5949 45%,
+                      #d6249f 60%,
+                      #285AEB 90%)`  }} />
                   </motion.div>
+                  </a></Link> 
+                  <Link passHref href="https://github.com/sourceKing"><a>
                   <motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 1.2, delay: 2.2}} style={{ margin: "0 20px" }}>
                      <GithubOutlined style={{ color: 'white', fontSize: 20 }} />
                   </motion.div>
+                  </a></Link>
+                  <Link passHref href="https://twitter.com/mimi_oncode"><a>
                   <motion.div animate={{marginBottom: [0, 20, 0]}} initial={{marginBottom: 0}} transition={{ loop: Infinity, ease: "easeInOut", repeatDelay: 3.2, delay: 3.2}}>
-                     <TwitterOutlined style={{ color: 'white', fontSize: 20 }} />
+                     <TwitterOutlined style={{ color: '#00acee', fontSize: 20 }} />
                   </motion.div>
+                  </a></Link>
                </div>
                <div style={{
                   right: 'auto',
@@ -113,7 +120,7 @@ class Header extends Component {
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <Image src="/hero/hero-img.svg" width='60%' alt="Brain art" />
+              <Image src="/hero/hero-img.svg" width='64%' alt="Brain art" />
             </Col> 
          </Row>
       );

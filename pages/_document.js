@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
+          <link rel="icon" type="image/jpg" href="/favicon.jpg" />
         </Head>
         <body>
           <Main />
