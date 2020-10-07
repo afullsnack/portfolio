@@ -3,7 +3,9 @@ import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Radio from 'antd/lib/radio';
 import Button from 'antd/lib/button';
+import Image from 'antd/lib/image';
 import { motion } from 'framer-motion';
+import Typical from 'react-typical';
 
 import { InstagramOutlined, GithubOutlined, TwitterOutlined, } from '@ant-design/icons';
 import Link from 'next/link';
@@ -17,27 +19,66 @@ class Header extends Component {
       
       const { path } = this.props;
       console.log(path);
+      console.log()
       
       return (
          <Row gutter={[0, 8]} style={{
             width: '100%',
-            height: '60vh',
+            height: '70vh',
             marginBottom: 0,
-            backgroundColor: "#0049B7",
+            backgroundColor: '#001529',
             // transition: "all .3s ease",
             //backgroundImage: "url('/hero-img-2.jpg')",
             //backgroundPosition: "center",
             //backgroundSize: "cover",
             //backgroundRepeat: "no-repeat",
          }}>
-            <Col span={24} style={{
-               display: 'flex',
-               flexFlow: 'column',
-               alignItems: 'center',
-               justifyContent: 'flex-end',
-               padding: 20,
+            <Col span={10} style={{
+              height: '100%',
+              display: 'flex',
+              flexFlow: 'column',
+              alignItems: 'flex-end',
+              justifyContent: 'center'
             }}>
-               <div style={{
+              <h1 style={{
+							  margin: 0,
+							  padding: 0,
+							  fontSize: "3rem",
+							  textAlign: "right",
+							  fontWeight: 'bolder',
+							  background: `
+								  linear-gradient(
+									  to right,
+									  #9b461f,
+									  #dea450
+								  )
+							  `,
+							  fontFamily: "monospace",
+							  WebkitBackgroundClip: 'text',
+							  WebkitTextFillColor: 'transparent',
+						  }}>Hi, I'm <br /> Miracle Friday</h1>
+              <h3 style={{
+							  margin: 0,
+							  padding: 0,
+							  fontSize: "1.5rem",
+							  textAlign: "center",
+							  fontWeight: 'bolder',
+							  background: `
+								  linear-gradient(
+									  to right,
+									  #9b461f,
+									  #dea450
+								  )
+							  `,
+							  fontFamily: "monospace",
+							  WebkitBackgroundClip: 'text',
+							  WebkitTextFillColor: 'transparent',
+						  }}>
+                I{' '}
+                <Typical loop={Infinity} wrapper='b' steps={['Design Websites/Apps', 1700, 'Build Websites/Apps', 1700, 'Am an Entrepreneur', 1700]} />
+              </h3>
+
+              <div style={{
                   display: "flex",
                   flexFlow: "row",
                   alignItems: "center",
@@ -56,12 +97,8 @@ class Header extends Component {
                   </motion.div>
                </div>
                <div style={{
-                  position: "absolute",
-                  bottom: -15,
                   right: 'auto',
                   left: 'auto',
-                  width: '70%',
-                  textAlign: "center"
                }}>
                   <Radio.Group optionType="button" buttonStyle="solid" value={path == "/blog"? "blog" : "home"} defaultValue="home">
                      <Link href="/" passHref><Radio.Button value="home">HOME</Radio.Button></Link>
@@ -69,6 +106,15 @@ class Header extends Component {
                   </Radio.Group>
                </div>
             </Col>
+            <Col span={14} style={{
+              height: '100%',
+              display: 'flex',
+              flexFlow: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <Image src="/hero/hero-img.svg" width='60%' alt="Brain art" />
+            </Col> 
          </Row>
       );
    }
