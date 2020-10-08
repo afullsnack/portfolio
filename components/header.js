@@ -24,7 +24,7 @@ class Header extends Component {
       return (
          <Row gutter={[0, 8]} style={{
             width: '100%',
-            height: '70vh',
+            minHeight: '70vh',
             marginBottom: 0,
             backgroundColor: '#001529',
             // transition: "all .3s ease",
@@ -33,11 +33,11 @@ class Header extends Component {
             //backgroundSize: "cover",
             //backgroundRepeat: "no-repeat",
          }}>
-            <Col span={10} style={{
-              height: '100%',
+            <Col xs={{span: 24, order: 2}} sm={{span: 24, order: 2}} lg={{span: 10, order: 1}} xl={{span: 10, order: 1}} style={{
+              height: 'inherit',
               display: 'flex',
               flexFlow: 'column',
-              alignItems: 'flex-end',
+              alignItems: 'center',
               justifyContent: 'center'
             }}>
               <h1 style={{
@@ -45,15 +45,14 @@ class Header extends Component {
 							  padding: 0,
 							  fontSize: "3rem",
                 lineHeight: 1.4,
-							  textAlign: "right",
+							  textAlign: "center",
 							  fontWeight: 'bolder',
 							  background: `
 								  linear-gradient(
 									  to right,
 									  #09d3ac,
 									  #fde311
-								  )
-							  `,
+								  )`,
 							  fontFamily: "monospace",
 							  WebkitBackgroundClip: 'text',
 							  WebkitTextFillColor: 'transparent',
@@ -113,8 +112,8 @@ class Header extends Component {
                   </Radio.Group>
                </div>
             </Col>
-            <Col span={14} style={{
-              height: '100%',
+            <Col xs={{span: 24, order: 1}} sm={{span: 24, order: 1}} lg={{span: 14, order: 2}} xl={{span: 14, order: 2}} style={{
+              height: 'inherit',
               display: 'flex',
               flexFlow: 'row',
               alignItems: 'center',
