@@ -69,7 +69,7 @@ class Header extends Component {
 							  WebkitTextFillColor: 'transparent',
 						  }}>
                 I{' '}
-                <Typical loop={Infinity} wrapper='b' steps={['Design Websites/Apps', 1700, 'Build Websites/Apps', 1700, 'Am an Entrepreneur', 1700]} />
+                <Typical loop={Infinity} wrapper='b' steps={['Design Websites/Apps', 1700, 'Build Websites/Apps', 1700, 'Am a Techpreneur', 1700]} />
               </h3>
 
               <div style={{

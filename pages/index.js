@@ -4,7 +4,7 @@ import Col from 'antd/lib/col';
 import Card from 'antd/lib/card';
 import Button from 'antd/lib/button';
 
-import { LinkOutlined, LinkedinFilled, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled, InstagramFilled, TwitterCircleFilled, ArrowRightOutlined, ArrowLeftOutlined, MailOutlined, } from '@ant-design/icons';
+import { LinkOutlined, LinkedinFilled, LaptopOutlined, CloudOutlined, MobileOutlined, GithubFilled, InstagramOutlined, InstagramFilled, TwitterCircleFilled, ArrowRightOutlined, ArrowLeftOutlined, MailOutlined, } from '@ant-design/icons';
 
 import { motion } from 'framer-motion';
 
@@ -18,7 +18,7 @@ class Index extends Component {
 		const { addedStyle } = this.props;
 		return(
 			<>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: '20px 50px 50px 50px', }}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: '20px 5% 50px 5%', }}>
 					<Col span={24} style={{
 						display: 'flex',
 						alignItems: 'center',
@@ -30,16 +30,17 @@ class Index extends Component {
 							fontSize: "1.8rem",
 							textAlign: "center",
 							fontWeight: 'bolder',
-							background: `
-								linear-gradient(
-									to right,
-									#9b461f,
-									#dea450
-								)
-							`,
+              color: '#09d3ac',
+							//background: `
+								//linear-gradient(
+									//to right,
+									//#9b461f,
+									//#dea450
+								//)
+							//`,
 							fontFamily: "monospace",
-							WebkitBackgroundClip: 'text',
-							WebkitTextFillColor: 'transparent',
+							//WebkitBackgroundClip: 'text',
+							//WebkitTextFillColor: 'transparent',
 						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Skills & Experiences <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} lg={{span: 8}} xl={{span: 8}} style={{
@@ -57,7 +58,16 @@ class Index extends Component {
 								'-10px -10px 10px 0 rgba(255,255,255,.12)',
 							]
 						}}>
-							<Card.Meta title="Web Apps" description="I am well versed in react.js development with over 3 years of experience learning and deplying web apps. My favourite tool to work wth react.js is next.js for server rendering, which significantly reduces web app loading time and displays content to the user very fast." />
+							<Card.Meta title="Websites" description={
+                <p>I am well versed in react.js development with over 3 years of experience building and deplying web apps.<br/><br/>
+                <ul>
+                  <li className="exp">SSR - Server Side Rendering</li>
+                  <li className="exp">Single Page Applications</li>
+                  <li className="exp">Progressive Web Application</li>
+                  <li className="exp">SEO web pages</li>
+                </ul>
+                </p>
+              } />
 						</Card>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} lg={{span: 8}} xl={{span: 8}} style={{
@@ -75,7 +85,16 @@ class Index extends Component {
 								'-10px -10px 10px 0 rgba(255,255,255,.12)',
 							]
 						}}>
-							<Card.Meta title="Server & Databases" description="The other side of my web development stack is Node.js/Flask and MongoDB/MySQLite for server and databases, depending on what the projects requirements are, I have experience working with Node.js for JavaScript and Flask for python to build robust server functions that can handle user or api endpooint requests optimaly." />
+							<Card.Meta title="Server & Databases" description={
+                <p>Experienced in writing backend code to handle requests and API calls as well as optimize server for better performance.<br/><br/>
+                <ul>
+                  <li className="exp">API design with authentication</li>
+                  <li className="exp">Database setup and Schema design</li>
+                  <li className="exp">MongoDB and SQLite Databases</li>
+                  <li className="exp">Learning microservices (Docker)</li>
+                </ul>  
+                </p>
+              } />
 						</Card>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} lg={{span: 8}} xl={{span: 8}} style={{
@@ -93,11 +112,21 @@ class Index extends Component {
 								'-10px -10px 10px 0 rgba(255,255,255,.12)',
 							]
 						}}>
-							<Card.Meta title="Mobile Apps" description="Yes I also build cross platform mobile apps with Flutter framework, which is useful for things like building and mentaining one source code for both iOS and Android operating systems. Building unique native app user interface and experience with custom animations and design that users find both soothing and satisfying when using the app." />
+							<Card.Meta title="Mobile Apps" description={
+                <p>
+                  Building cross platform mobile apps with the Flutter framework as Android and iOS apps can be shipped from one code base.<br/><br/>
+                  <ul>
+                    <li className="exp">UI/UX Design & Development</li>
+                    <li className="exp">Beautiful and Performant app</li>
+                    <li className="exp">Animations and Effects</li>
+                    <li className="exp">Pro state/data management</li>
+                  </ul>
+                </p>
+              } />
 						</Card>
 					</Col>
 				</Row>
-				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: 50}}>
+				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: '5%'}}>
 					<Col span={24} style={{textAlign: 'center'}}>
 						<h1 style={{
 							margin: 0,
@@ -105,16 +134,17 @@ class Index extends Component {
 							fontSize: '1.8rem',
 							textAlign: "center",
 							fontWeight: 'bolder',
-							background: `
-								linear-gradient(
-									to right,
-									#9b461f,
-									#dea450
-								)
-							`,
+              color: '#09d3ac',
+							//background: `
+								//linear-gradient(
+									//to right,
+									//#9b461f,
+									//#dea450
+								//)
+							//`,
 							fontFamily: "monospace",
-							WebkitBackgroundClip: 'text',
-							WebkitTextFillColor: 'transparent',
+							//WebkitBackgroundClip: 'text',
+							//WebkitTextFillColor: 'transparent',
 						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Portfolio <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
@@ -186,44 +216,51 @@ class Index extends Component {
 							fontSize: '1.8rem',
 							textAlign: "left",
 							fontWeight: 'bolder',
-							background: `
-								linear-gradient(
-									to right,
-									#9b461f,
-									#dea450
-								)
-							`,
+              color: '#09d3ac',
+							//background: `
+								//linear-gradient(
+									//to right,
+									//#9b461f,
+									//#dea450
+								//)
+							//`,
 							fontFamily: "monospace",
-							WebkitBackgroundClip: 'text',
-							WebkitTextFillColor: 'transparent',
+							//WebkitBackgroundClip: 'text',
+							//WebkitTextFillColor: 'transparent',
 						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Contact Me <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 						<h2>Want to Hire me?</h2>
-						<Button type="link" style={{backgroundColor: "#9b461f", color: "white"}} size="large" href="mailto:miraclef60@gmail.com"><MailOutlined /> SHOOT AN EMAIL</Button>
+						<Button type="link" style={{backgroundColor: "#001529", color: "white"}} size="large" href="mailto:miraclef60@gmail.com"><MailOutlined /> SHOOT AN EMAIL</Button>
 					</Col>
-					<Col className="cool-bg" xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{textAlign: 'center', margin: 0, padding: 50}}>
+					<Col className="cool-bg" xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{textAlign: 'center', margin: 0, padding: 50, backgroundColor: '#001529'}}>
 						<h2 className="socials">Socials</h2>
-						<Card style={{background: "transparent", padding: 20, display: "flex", alignItems: "center", justifyContent: "center" }} bordered={false}>
-							<Card.Grid style={{width: "50%", backgroundColor: "transparent", display: "flex", alignItems: "center", justifyContent: "end"}}>
-								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<Link passHref href="https://github.com/sourceKing"><a>
-                    <GithubFilled style={{fontSize: 49}} />
-                  </a></Link>
+						<Card style={{background: "transparent", padding: 20, textAlign: 'center' }} bordered={false}>
+							<Card.Grid style={{width: "50%", backgroundColor: "transparent", textAlign: 'center'}}>
+								<Link passHref href="https://github.com/sourceKing"><a>
+								<div style={{padding: 20, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "inline-block"}}>
+                    <GithubFilled style={{fontSize: 49, color: '#001529'}} />
 								</div>
+                </a></Link>
 							</Card.Grid>
-							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
-								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
-									<Link passHref href="https://instagram.com/mimi.codes"><a>
-                    <InstagramFilled style={{fontSize: 49}} />
-                  </a></Link>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent", textAlign: 'center'}}>
+								<Link passHref href="https://instagram.com/mimi.codes"><a>
+								<div style={{padding: 20, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "inline-block"}}>
+                    <InstagramOutlined style={{ color: '#ffffff', borderRadius: 8, fontSize: 49, background: '#d6249f', background: `radial-gradient(
+                      circle at 30% 107%,
+                      #fdf497 0%,
+                      #fdf497 5%,
+                      #fd5949 45%,
+                      #d6249f 60%,
+                      #285AEB 90%)`  }} />
 								</div>
+                </a></Link>
 							</Card.Grid>
-							<Card.Grid style={{width: "50%", backgroundColor: "transprent", display: "flex", alignItems: "center", justifyContent: "end"}}>
-								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent", textAlign: 'center'}}>
+								<div style={{padding: 20, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "inline-block"}}>
 									<LinkedinFilled style={{fontSize: 49}} />
 								</div>
 							</Card.Grid>
-							<Card.Grid style={{width: "50%", backgroundColor: "transprent"}}>
-								<div style={{width: 90, height: 90, padding: 10, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "flex", alignItems: "center", justifyContent: "center"}}>
+							<Card.Grid style={{width: "50%", backgroundColor: "transprent", textAlign: 'center'}}>
+								<div style={{padding: 20, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "inline-block"}}>
 									<Link passHref href="https://twitter.com/mimi_oncode"><a>
                     <TwitterCircleFilled style={{fontSize: 49}} />
                   </a></Link>
@@ -235,20 +272,20 @@ class Index extends Component {
 
 				<style global jsx>{`
 					.ant-card-meta-title {
-						// color: white;
+						color: #09d3ac;
 						text-align: center;
 						font-weight: bolder;
 						font-size: 1.3rem;
 						letter-spacing: 1.2px;
 						font-family: monospace, sans-serif;
-						background: linear-gradient(to right, #9b461f, #dea450);
-						-webkit-background-clip: text;
-						-webkit-text-fill-color: transparent;
+						//background: linear-gradient(to right, #9b461f, #dea450);
+						//-webkit-background-clip: text;
+						//-webkit-text-fill-color: transparent;
 					}
 					.ant-card-meta-description {
 						color: white;
 						letter-spacing: 1px;
-						text-align: center;
+						text-align: left;
 					}
 					.ant-card-grid {
 						box-shadow: none;
@@ -288,6 +325,14 @@ class Index extends Component {
               #0049B7;
               //repeating-linear-gradient(45deg, #9b461f 4%, #001529 5%);
 					}
+          ul {
+            list-style-type: none;
+            padding: 20px;
+          }
+          li.exp {
+            list-style-type: none;
+          }
+          li.exp:before { content: '>'; color: #09d3ac; margin-left: -20px; margin-right: 10px; }
 				`}</style>
 			</>
 		)
