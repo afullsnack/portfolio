@@ -11,7 +11,8 @@ import Radio from 'antd/lib/radio';
 import { motion } from 'framer-motion';
 
 import Link from 'next/link';
-import Router from 'next/router';
+// import Router from 'next/router';
+import Head from 'next/head';
 import withLayout from '../components/LayoutHOC';
 
 class Blog extends Component {
@@ -20,6 +21,11 @@ class Blog extends Component {
 		
 		return(
 			<>
+				<Head>
+					<title>Blog - mimi.codes</title>
+					<meta name="robots" content="index, follow" />
+					<meta name="description" content="Blog page for Miracle Friday portfolio website, filled with tips, tutorials and best practices" />
+				</Head>
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: "50px 0"}}>
             <h1 style={{
                margin: 0,

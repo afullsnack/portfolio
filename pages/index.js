@@ -9,8 +9,9 @@ import { LinkOutlined, LinkedinFilled, LaptopOutlined, CloudOutlined, MobileOutl
 import { motion } from 'framer-motion';
 
 import Link from 'next/link';
-import Router from 'next/router';
+// import Router from 'next/router';
 import Image from 'next/image';
+import Head from 'next/head';
 import withLayout from '../components/LayoutHOC';
 
 class Index extends Component {
@@ -24,6 +25,11 @@ class Index extends Component {
 
 		return(
 			<>
+				<Head>
+					<title>Home - mimi.codes</title>
+					<meta name="robots" content="index, follow" />
+					<meta name="description" content="Portfolio website for Miracle Friday a web/app developer" />
+				</Head>
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: '20px 5% 50px 5%', }}>
 					<Col span={24} style={{
 						display: 'flex',
@@ -65,14 +71,17 @@ class Index extends Component {
 							]
 						}}>
 							<Card.Meta title="Websites" description={
-                <p>I am well versed in react.js development with over 3 years of experience building and deplying web apps.<br/><br/>
-                <ul>
-                  <li className="exp">SSR - Server Side Rendering</li>
-                  <li className="exp">Single Page Applications</li>
-                  <li className="exp">Progressive Web Application</li>
-                  <li className="exp">SEO web pages</li>
-                </ul>
-                </p>
+								<>
+									<p>
+										I am well versed in react.js development with over 3 years of experience building and deplying web apps.<br/>
+									</p>
+									<ul>
+										<li className="exp">SSR - Server Side Rendering</li>
+										<li className="exp">Single Page Applications</li>
+										<li className="exp">Progressive Web Application</li>
+										<li className="exp">SEO web pages</li>
+									</ul>
+								</>
               } />
 						</Card>
 					</Col>
@@ -92,14 +101,17 @@ class Index extends Component {
 							]
 						}}>
 							<Card.Meta title="Server & Databases" description={
-                <p>Experienced in writing backend code to handle requests and API calls as well as optimize server for better performance.<br/><br/>
-                <ul>
-                  <li className="exp">API design with authentication</li>
-                  <li className="exp">Database setup and Schema design</li>
-                  <li className="exp">MongoDB and SQLite Databases</li>
-                  <li className="exp">Learning microservices (Docker)</li>
-                </ul>  
-                </p>
+								<>
+									<p>
+										Experienced in writing backend code to handle requests and API calls as well as optimize server for better performance.<br/>
+									</p>
+									<ul>
+										<li className="exp">API design with authentication</li>
+										<li className="exp">Database setup and Schema design</li>
+										<li className="exp">MongoDB and SQLite Databases</li>
+										<li className="exp">Learning micro services (Docker)</li>
+									</ul>  
+								</>
               } />
 						</Card>
 					</Col>
@@ -119,15 +131,17 @@ class Index extends Component {
 							]
 						}}>
 							<Card.Meta title="Mobile Apps" description={
-                <p>
-                  Building cross platform mobile apps with the Flutter framework as Android and iOS apps can be shipped from one code base.<br/><br/>
-                  <ul>
-                    <li className="exp">UI/UX Design & Development</li>
-                    <li className="exp">Beautiful and Performant app</li>
-                    <li className="exp">Animations and Effects</li>
-                    <li className="exp">Pro state/data management</li>
-                  </ul>
-                </p>
+								<>
+									<p>
+										Building cross platform mobile apps with the Flutter framework as Android and iOS apps can be shipped from one code base.<br/>
+									</p>
+									<ul>
+										<li className="exp">UI/UX Design & Development</li>
+										<li className="exp">Beautiful and Performant app</li>
+										<li className="exp">Animations and Effects</li>
+										<li className="exp">Pro state/data management</li>
+									</ul>
+								</>
               } />
 						</Card>
 					</Col>
@@ -333,7 +347,7 @@ class Index extends Component {
 					}
           ul {
             list-style-type: none;
-            padding: 20px;
+            padding: 0 20px;
           }
           li.exp {
             list-style-type: none;
