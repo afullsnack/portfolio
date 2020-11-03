@@ -247,7 +247,7 @@ class Index extends Component {
 							fontFamily: "monospace",
 							//WebkitBackgroundClip: 'text',
 							//WebkitTextFillColor: 'transparent',
-						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Contact Me <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
+						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Hire Me <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
 						<h2>Have an interesting project?</h2>
 						<Button type="link" style={{backgroundColor: "#001529", color: "white"}} size="large" href="mailto:miraclef60@gmail.com"><MailOutlined /> SHOOT AN EMAIL</Button>
 					</Col>
