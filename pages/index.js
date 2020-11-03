@@ -178,7 +178,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<Image src="/hero-img.png" width="400" height="300" />}>
+						cover={<img src="/hero-img.png" width="100%" height="100%" loading="lazy" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -193,7 +193,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<Image src="/hero-img.png" width="400" height="300" />}>
+						cover={<img src="/hero-img.png" width="100%" height="100%" loading="lazy" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -208,7 +208,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<Image src="/hero-img.png" width="400" height="300" />}>
+						cover={<img src="/hero-img.png" width="100%" height="100%" loading="lazy" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -223,7 +223,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<Image src="/hero-img.png" width="400" height="300" />}>
+						cover={<img src="/hero-img.png" width="400" height="300" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
