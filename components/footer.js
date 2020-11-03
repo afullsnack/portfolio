@@ -32,22 +32,16 @@ class Footer extends Component {
                   fontSize: '1.5rem',
                   textAlign: "left",
                   fontWeight: 'bolder',
-                  background: `
-                     linear-gradient(
-                        to right,
-                        #9b461f,
-                        #dea450
-                     )
-                  `,
+                  background: '#09d3ac',
                   fontFamily: "monospace",
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                }}>Join my mailing list!</h1>
-               <h2 style={{color: "#001529", fontFamily: "monospace", lineHeight: 1, fontSize: "1rem"}}>For code tips, inspiration, tutorials and more</h2>
+               <h2 style={{color: "#09d3ac", fontFamily: "monospace", lineHeight: 1, fontSize: "1rem"}}>For code tips, inspiration, tutorials and more</h2>
                <Input value={this.state.email} onChange={e => this.setState({email: e.target.value})} prefix={<MailFilled style={{color: '#001529'}} />} suffix={this.state.loadingListing? <LoadingOutlined /> : <Button type="link" size="small" style={{fontWeight: 'bolder'}} onClick={e => this.handleListing()}>Join List</Button>} type="email" size="large"  placeholder="Enter email, NO BS!" />
             </Col>
             <Col span={24} style={{padding: 20, textAlign: "center"}}>
-               <span style={{color: "white"}}>Copoy right designed by Miracle Friday c 2020</span>
+               <span style={{color: "white"}}>Designed and Developed by Miracle Friday © 2020</span>
             </Col>
             <style jsx>{`
                ul.extra_repos {

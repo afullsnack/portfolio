@@ -3,7 +3,7 @@ import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Radio from 'antd/lib/radio';
 import Button from 'antd/lib/button';
-import Image from 'antd/lib/image';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Typical from 'react-typical';
 
@@ -119,7 +119,7 @@ class Header extends Component {
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <Image src="/hero/hero-img.svg" width='64%' alt="Brain art" />
+              <Image src="/hero/hero-img.svg" width="400" height="400" alt="Brain art" />
             </Col> 
          </Row>
       );

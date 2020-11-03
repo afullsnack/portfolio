@@ -10,12 +10,18 @@ import { motion } from 'framer-motion';
 
 import Link from 'next/link';
 import Router from 'next/router';
+import Image from 'next/image';
 import withLayout from '../components/LayoutHOC';
 
 class Index extends Component {
     
 	render(){
-		const { addedStyle } = this.props;
+
+		// test out new console debug features
+		// console.warn('An error might occur here');
+		// console.info('This shows an info for your digest');
+		// console.assert(2 == 1, 'Nahh bruv that doesn\'t work at all');
+
 		return(
 			<>
 				<Row gutter={[32, 32]} style={{width: '100%', margin: 0, backgroundColor: '#001529', padding: '20px 5% 50px 5%', }}>
@@ -158,7 +164,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+						cover={<Image src="/hero-img.png" width="400" height="300" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -173,7 +179,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+						cover={<Image src="/hero-img.png" width="400" height="300" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -188,7 +194,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+						cover={<Image src="/hero-img.png" width="400" height="300" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -203,7 +209,7 @@ class Index extends Component {
 							border: 0,
 						}}
 						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.jpg" width="100%" height="100%" />}>
+						cover={<Image src="/hero-img.png" width="400" height="300" />}>
 							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
 						</Card>
 					</Col>
@@ -228,7 +234,7 @@ class Index extends Component {
 							//WebkitBackgroundClip: 'text',
 							//WebkitTextFillColor: 'transparent',
 						}}><ArrowRightOutlined style={{ color: '#1890ff', fontSize: 22 }} /> Contact Me <ArrowLeftOutlined style={{ color: '#1890ff', fontSize: 22 }} /></h1>
-						<h2>Want to Hire me?</h2>
+						<h2>Have an interesting project?</h2>
 						<Button type="link" style={{backgroundColor: "#001529", color: "white"}} size="large" href="mailto:miraclef60@gmail.com"><MailOutlined /> SHOOT AN EMAIL</Button>
 					</Col>
 					<Col className="cool-bg" xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 12}} xl={{span: 12}} style={{textAlign: 'center', margin: 0, padding: 50, backgroundColor: '#001529'}}>
