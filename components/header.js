@@ -102,7 +102,7 @@ class Header extends Component {
                   </motion.div>
                   </a></Link>
                </div>
-               <div style={{
+               {/* <div style={{
                   right: 'auto',
                   left: 'auto',
                }}>
@@ -110,7 +110,7 @@ class Header extends Component {
                      <Link href="/" passHref><Radio.Button value="home">HOME</Radio.Button></Link>
                      <Link href="/blog" passHref><Radio.Button value="blog">BLOG</Radio.Button></Link>
                   </Radio.Group>
-               </div>
+               </div> */}
             </Col>
             <Col xs={{span: 24, order: 1}} sm={{span: 24, order: 1}} lg={{span: 14, order: 2}} xl={{span: 14, order: 2}} style={{
               height: 'inherit',

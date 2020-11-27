@@ -177,9 +177,9 @@ class Index extends Component {
 							],
 							border: 0,
 						}}
-						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/repo"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
-						cover={<img src="/hero-img.png" width="100%" height="100%" loading="lazy" />}>
-							<span>Lorem ipsum dolor sit amet inlaw calling on all of us at the late night party with all the hoes to comme check ohate he has going on for the time being as nice as can be one at a time</span>
+						actions={[<GithubFilled style={{ color: "white" }} onClick={() => window.location.href = "https://github.com/sourceKing/unomeal"} />, <LinkOutlined style={{ color: "white" }} onClick={() => window.location.href = "http://localhost:3000"} />]}
+						cover={<img src="/portfolio-img-1.jpg" width="100%" height="100%" loading="lazy" />}>
+							<span><b>Unomeal.</b> A webapp platform for food delivery from both independent chefs and restaurants. Vendors can easily upload their menu and have their business online and ready for customers in minutes</span>
 						</Card>
 					</Col>
 					<Col xs={{span: 24}} sm={{span: 24}} md={{span: 12}} lg={{span: 8}} xl={{span: 6}} style={{margin: 0}}>
@@ -276,7 +276,9 @@ class Index extends Component {
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent", textAlign: 'center'}}>
 								<div style={{padding: 20, borderRadius: 10, background: "radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.9))", display: "inline-block"}}>
-									<LinkedinFilled style={{fontSize: 49}} />
+									<Link passHref href="https://linkedin.com/in/miracle-friday-b0587b119"><a>
+										<LinkedinFilled style={{fontSize: 49}} />
+									</a></Link>
 								</div>
 							</Card.Grid>
 							<Card.Grid style={{width: "50%", backgroundColor: "transprent", textAlign: 'center'}}>
