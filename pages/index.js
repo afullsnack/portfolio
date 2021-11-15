@@ -1,30 +1,23 @@
-import { Component } from "react";
-import Row from "antd/lib/row";
-import Col from "antd/lib/col";
-import Card from "antd/lib/card";
-import Button from "antd/lib/button";
-
 import {
-  LinkOutlined,
-  LinkedinFilled,
-  LaptopOutlined,
+  ArrowLeftOutlined,
+  ArrowRightOutlined,
   CloudOutlined,
-  MobileOutlined,
   GithubFilled,
   InstagramOutlined,
-  InstagramFilled,
-  TwitterCircleFilled,
-  ArrowRightOutlined,
-  ArrowLeftOutlined,
+  LaptopOutlined,
+  LinkedinFilled,
+  LinkOutlined,
   MailOutlined,
+  MobileOutlined,
+  TwitterCircleFilled,
 } from "@ant-design/icons";
-
-import { motion } from "framer-motion";
-
-import Link from "next/link";
-// import Router from 'next/router';
-import Image from "next/image";
+import Button from "antd/lib/button";
+import Card from "antd/lib/card";
+import Col from "antd/lib/col";
+import Row from "antd/lib/row";
 import Head from "next/head";
+import Link from "next/link";
+import { Component } from "react";
 import withLayout from "../components/LayoutHOC";
 
 class Index extends Component {
@@ -117,15 +110,17 @@ class Index extends Component {
               }}
             >
               <Card.Meta
-                title="Websites"
+                title="Web Apps"
                 description={
                   <>
                     <p>
                       I am well versed in react.js development with over 3 years
-                      of experience building and deplying web apps.
+                      of experience building and deploying web apps with{" "}
+                      <a href="https://nextjs.org/">next.js</a>.
                       <br />
                     </p>
                     <ul>
+                      <li className="exp">SSR - Server Side Rendering</li>
                       <li className="exp">SSR - Server Side Rendering</li>
                       <li className="exp">Single Page Applications</li>
                       <li className="exp">Progressive Web Application</li>
@@ -454,25 +449,24 @@ class Index extends Component {
                 <GithubFilled
                   style={{ color: "white" }}
                   onClick={() =>
-                    (window.location.href =
-                      "https://github.com/sourceKing/queststore")
+                    (window.location.href = "https://github.com/flintapi")
                   }
                 />,
                 <LinkOutlined
                   style={{ color: "white" }}
                   onClick={() =>
-                    (window.location.href = "https://qstore.vercel.app/")
+                    (window.location.href = "https://flintapi.io/")
                   }
                 />,
               ]}
               cover={
-                <img src="/portfolio-img-4_.jpeg" width="100%" height="100%" />
+                <img src="/new_portfolio_img.jpeg" width="100%" height="100%" />
               }
             >
               <span>
-                <b>Queststore - </b> An online store for fashion store for
-                fashionisters and clothing designers to meet, user can interact
-                with designers creation and buy what they like with ease.
+                <b>FlintAPI - </b> Enables developers to build next generation
+                video games / applications with APIs that deliver relevant and
+                tradeable NFT assets in seconds.
               </span>
             </Card>
           </Col>
