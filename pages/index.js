@@ -120,7 +120,9 @@ class Index extends Component {
                       <br />
                     </p>
                     <ul>
-                      <li className="exp">SSR - Server Side Rendering</li>
+                      <li className="exp">
+                        Web3 Developer (EVM & Solana blockchains)
+                      </li>
                       <li className="exp">SSR - Server Side Rendering</li>
                       <li className="exp">Single Page Applications</li>
                       <li className="exp">Progressive Web Application</li>
